@@ -1,0 +1,49 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 0;
+    height: 100vh;
+}
+.split{
+ width: 50%;
+ margin: 0;
+ height:100%;
+ overflow: hidden;
+    
+}
+.split.left{
+    background: url(./ps.jpg)  no-repeat center center/cover;
+}
+
+.split.right{
+    background: url(./xbox.jpg)   no-repeat center center/cover;
+}
+
+.split h1{
+ font-size: 50px;
+ color: #fff;
+ font-weight: bold;
+ position: absolute;
+    top: 20%;
+}
+.split a{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    border: solid 2px #fff;
+    padding: 25px 40px;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    position: absolute;
+    top: 40%;
+}
