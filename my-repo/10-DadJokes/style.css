@@ -43,3 +43,6 @@ body {
 .btn:active{
     transform: scale(0.98);
 }
+.btn:hover{
+    opacity: 0.80;
+}

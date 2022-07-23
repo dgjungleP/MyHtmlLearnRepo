@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #e1e1e1;
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.key,
+.changeKey
+{
+  border:  1px solid gray;
+  padding: 20px;
+    background-color: rgba(255, 255, 255, 0.473);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#insert{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.changeKey{
+  width: 100%;
+  text-align: center;
+}
+.enevt-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  width: 200px;
+}
+.title{
+  color: gray;
+}
