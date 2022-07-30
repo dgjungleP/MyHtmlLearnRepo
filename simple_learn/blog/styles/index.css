@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        #eafbff 0%,
+        #eafbff 50%,
+        #5290f9 50%,
+        #5290f9 100%
+      );
+      margin: 0;
+      overflow: hidden;
+}
+#portrait{
+    width: 400px;
+    height: 400px;
+}
+img{
+   width: inherit;
+   border-radius: 50%;
+   box-shadow:  3px 3px 2px black;
+   border: 3px solid white;
+}
+h1{
+    color: gray;
+    margin-bottom: 25px;
+}
+#links{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#links a{
+    color:  white;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 50px;
+}
