@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Basic language of the web: HTML</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
   </head>
   <body>
     <header>
@@ -20,7 +21,7 @@
       <header>
         <h2>The Basic Language of the Web: HTML</h2>
         <img src="./images/laura-jones.jpg" width="50px" alt="HeadHost" />
-        <p>
+        <p class="author">
           Posted by <strong> Laura Jones </strong> on Monday, June 21st 2027
         </p>
         <img src="./images/post-img.jpg" alt="post-img" width="500px" />
@@ -79,26 +80,26 @@
     </article>
     <aside>
       <h4>Related posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img src="./images/related-1.jpg" width="50px" />
           <a href="#"> How to Learn Web Development</a>
-          <p>By jonas Schmedtmann</p>
+          <p class="related-author">By jonas Schmedtmann</p>
         </li>
         <li>
           <img src="./images/related-2.jpg" width="50px" />
           <a href="#"> The Unknwon rowers of CSS</a>
-          <p>By jJim Dillon</p>
+          <p class="related-author">By Jim Dillon</p>
         </li>
         <li>
           <img src="./images/related-3.jpg" width="50px" />
           <a href="#"> Why JavaScript is Awesone</a>
-          <p>By jonas Matilda</p>
+          <p class="related-author">By jonas Matilda</p>
         </li>
       </ul>
     </aside>
     <footer>
-      <p>Copyright &copy; 2027 By the Jungle</p>
+      <p id="copyright">Copyright &copy; 2027 By the Jungle</p>
     </footer>
   </body>
 </html>
