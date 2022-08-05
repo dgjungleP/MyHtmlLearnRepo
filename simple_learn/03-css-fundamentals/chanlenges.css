@@ -9,6 +9,7 @@
   border: 4px solid black;
   line-height: 1.5;
   margin-top: 50px;
+  position: relative;
 }
 a:link {
   color: black;
@@ -62,4 +63,48 @@ li {
 }
 .more-info {
   margin-bottom: 10px;
+}
+
+.colors {
+}
+
+.color {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin: 20px 10px 0px 10px;
+}
+
+.color:first-child {
+  margin: 20px 10px 0px 0;
+}
+.red {
+  background-color: red;
+}
+.black {
+  background-color: black;
+}
+.orange {
+  background-color: orange;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.brown {
+  background-color: brown;
+}
+
+.container::before {
+  content: "SALE";
+  position: absolute;
+  background-color: red;
+  padding: 5px 10px;
+  color: white;
+  top: -17px;
+  left: -40px;
+  letter-spacing: 5px;
+  display: inline-block;
 }
