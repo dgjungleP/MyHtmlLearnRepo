@@ -1,0 +1,45 @@
+div {
+  background-color: currentColor;
+}
+
+figure {
+  width: 12em;
+  height: 33em;
+  font-size: 10px;
+  position: relative;
+  color: grey;
+  margin: 5em;
+  border: 1px solid black;
+}
+
+.head {
+  position: absolute;
+  width: 7em;
+  height: 7em;
+
+  right: 0;
+  border-radius: 50%;
+}
+.body {
+  width: 6.2em;
+  height: 14.4em;
+  top: 7em;
+  position: absolute;
+  border-radius: 100% 20% 0 0;
+}
+
+.footer::before,
+.footer::after {
+  background-color: currentColor;
+  content: "";
+  width: 4em;
+  height: 1.4em;
+  bottom: 0;
+  position: absolute;
+  left: -1.6em;
+  border-radius: 1em 80% 0.4em 0.4em;
+}
+
+.footer::after {
+  transform: translateX(5.6em) translateY(-0.6em) rotate(4deg);
+}

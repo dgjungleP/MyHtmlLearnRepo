@@ -1,0 +1,21 @@
+body {
+  background-color: mediumaquamarine;
+  display: flex;
+  margin: 5em;
+}
+
+div {
+  border-radius: 50%;
+  border: 3em solid lightgreen;
+}
+
+div:nth-child(1) {
+  width: 18em;
+  height: 18em;
+  position: relative;
+  top: 3em;
+}
+div:nth-child(2) {
+  width: 20em;
+  height: 20em;
+}
