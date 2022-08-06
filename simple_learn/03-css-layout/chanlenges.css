@@ -2,6 +2,7 @@
   font-weight: bold;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .container {
   width: 800px;
@@ -69,8 +70,8 @@ li {
 }
 
 .color {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   margin: 20px 10px 0px 10px;
 }
@@ -107,4 +108,27 @@ li {
   left: -40px;
   letter-spacing: 5px;
   display: inline-block;
+}
+img {
+  width: 30%;
+  float: left;
+}
+
+.price {
+  float: left;
+  font-size: 24px;
+}
+.simple-title {
+  float: right;
+}
+.more-info {
+  clear: both;
+}
+.product-info {
+  width: 33%;
+  float: left;
+}
+.detail {
+  width: 33%;
+  float: left;
 }
