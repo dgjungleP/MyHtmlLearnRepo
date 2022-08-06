@@ -1,0 +1,23 @@
+.circle {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border-radius: 50%;
+}
+figure {
+  background-color: silver;
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+}
+
+.red {
+  background-color: coral;
+}
+.yellow {
+  background-color: gold;
+}
+.green {
+  background-color: lightgreen;
+}

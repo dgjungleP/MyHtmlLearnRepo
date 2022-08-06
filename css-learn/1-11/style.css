@@ -1,0 +1,33 @@
+figure {
+  display: grid;
+  width: 400px;
+  height: 400px;
+  grid-template-columns: repeat(10, 1fr);
+  counter-reset: n;
+}
+
+figure div {
+  counter-increment: n;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+figure div::before {
+  content: counter(n);
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 30px;
+}
+
+div:nth-child(2)::before,
+div:nth-child(3)::before,
+div:nth-child(5)::before,
+div:nth-child(7)::before,
+div:not(:nth-child(1)):not(:nth-child(2n)):not(:nth-child(3n)):not(:nth-child(5n)):not(:nth-child(7n)):before {
+  background-color: orange;
+}

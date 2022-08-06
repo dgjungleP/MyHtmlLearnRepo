@@ -1,0 +1,22 @@
+figure {
+  display: flex;
+}
+figure div {
+  border-radius: 50%;
+  background-color: rgb(56, 171, 56);
+  padding: 10px;
+  font-size: 30px;
+  font-family: sans-serif;
+  border: 1px black dashed;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  transition: 0.5s 0.4s ease-out;
+}
+
+figure div:hover {
+  transform: scale(1.2);
+  background-color: gold;
+  transition: 0.5 ease-out;
+}

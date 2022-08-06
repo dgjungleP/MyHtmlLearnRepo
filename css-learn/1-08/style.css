@@ -1,0 +1,18 @@
+.chessboard {
+  background-color: gainsboro;
+  width: 400px;
+  border: 10px solid darkgray;
+}
+.chessboard div span {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 0;
+}
+.chessboard div {
+  display: flex;
+}
+.chessboard div:nth-child(even) span:nth-child(odd),
+.chessboard div:nth-child(odd) span:nth-child(even) {
+  background-color: olive;
+}
