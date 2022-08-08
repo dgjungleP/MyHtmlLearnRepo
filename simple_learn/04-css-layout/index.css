@@ -130,7 +130,6 @@ article {
 }
 nav a:link {
   margin-right: 50px;
-  margin-top: 10px;
   display: inline-block;
 }
 nav a:link:last-child {
@@ -162,7 +161,7 @@ h2::after {
   color: white;
   border-radius: 15px;
 }
-.author-img {
+/* .author-img {
   float: left;
 }
 .author {
@@ -191,4 +190,56 @@ aside {
 }
 footer {
   clear: both;
+} */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.related-link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 4px;
+  display: block;
+}
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+.related img {
+  width: 50px;
+  height: 50px;
+}
+.row {
+  display: flex;
+  gap: 10%;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+aside {
+  flex: 0 0 30%;
 }
