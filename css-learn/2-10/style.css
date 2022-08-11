@@ -1,0 +1,112 @@
+body {
+  background-color: bisque;
+  display: flex;
+  height: 100vh;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.monster {
+  background-color: green;
+  height: 200px;
+  width: 150px;
+  display: flex;
+  position: relative;
+  border-radius: 75px 75px 15px 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ear {
+  background-color: green;
+  height: 100px;
+  width: 10px;
+  position: absolute;
+  top: -40px;
+}
+.ear::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  position: absolute;
+  top: -15px;
+  border-radius: 50%;
+  left: -10px;
+}
+
+.ear:nth-child(1) {
+  right: 30px;
+  transform: rotate(30deg);
+}
+
+.ear:nth-child(2) {
+  left: 30px;
+  transform: rotate(-30deg);
+}
+
+.eyes {
+  height: 100px;
+  width: 100px;
+  z-index: 1;
+  border-radius: 77% 77% 77% 77% /92% 92% 60% 60%;
+
+  background: radial-gradient(circle at 50% 25%, white 0.4em, transparent 0.4em),
+    radial-gradient(circle at 50% 40%, black 1.7em, transparent 1.7em), white;
+  box-shadow: 0em 0.5em 0.1em #026d02;
+}
+
+.eye {
+  position: absolute;
+  width: 6.5em;
+  height: 6.5em;
+  background: radial-gradient(circle at 50% 25%, white 0.4em, transparent 0.4em),
+    radial-gradient(circle at 50% 40%, black 1.7em, transparent 1.7em), white;
+  border-radius: 77% 77% 77% 77%/92% 92% 60% 60%;
+  top: 2em;
+  left: calc((10em - 6.5em) / 2);
+  box-shadow: 0.2em 0.9em 0 hsla(0, 0%, 0%, 0.1);
+}
+.mouth {
+  background-color: black;
+  height: 30px;
+  width: 50px;
+  border-radius: 20px 20px 75px 75px;
+  position: relative;
+  margin-top: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.mouth::after {
+  content: "";
+  background-color: tomato;
+  width: 50px;
+  height: 10px;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  border-radius: 100%;
+}
+
+.mouth .teeth::after,
+.mouth .teeth::before,
+.mouth .teeth {
+  content: "";
+  border-top: 10px solid white;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+}
+.mouth .teeth::after {
+  left: 5px;
+  top: -10px;
+}
+
+.mouth .teeth::before {
+  left: -15px;
+  top: -10px;
+}
