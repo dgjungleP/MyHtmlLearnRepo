@@ -51,7 +51,7 @@ h2 {
   color: white;
   display: inline-block;
   font-weight: 600;
-  border-radius: 5px;
+  border-radius: 50px;
   letter-spacing: 1px;
 }
 .btn:hover,
@@ -128,7 +128,8 @@ img {
   transition: all 0.5s ease;
 }
 .testimonial-section:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
+  box-shadow: 0.1em 0.1em 1em 0.1em #087f5b;
 }
 .testimonial-box {
   grid-column: 2 / -1;
@@ -188,4 +189,25 @@ footer {
   margin-bottom: 48px;
   font-size: 14px;
   color: #495057;
+}
+
+.features-icon {
+  stroke: #087f5b;
+  width: 32px;
+  margin-bottom: 16px;
+}
+.chair-icon {
+  stroke: #087f5b;
+  width: 24px;
+}
+.chair {
+  box-shadow: 0.1em 0.1em 0.5em 0.1em rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+}
+
+img {
+  border-radius: 12px;
+}
+.chair img {
+  border-radius: 12px 12px 0 0;
 }

@@ -1,5 +1,5 @@
 {
-  "name": "my-cli",
+  "name": "jungle-cli",
   "version": "1.0.0",
   "description": "",
   "bin": {
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "djungle",
   "license": "ISC",
   "dependencies": {
     "co": "^4.6.0",
