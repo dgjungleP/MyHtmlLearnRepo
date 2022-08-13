@@ -1,0 +1,249 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.border-style div {
+  border-width: 1vmin;
+  background-color: aqua;
+  height: 3em;
+  width: 3em;
+}
+.border-style {
+  display: flex;
+  justify-content: space-between;
+}
+
+.border-style .div1 {
+  border-style: solid;
+  border-color: tomato;
+}
+.border-style .div2 {
+  border-style: dashed;
+  border-color: hotpink;
+}
+.border-style .div3 {
+  border-style: dotted;
+}
+.border-style .div4 {
+  border-style: double;
+}
+.border-style .div5 {
+  border-style: groove;
+}
+.border-style .div6 {
+  border-style: ridge;
+}
+.border-style .div7 {
+  border-style: inset;
+}
+.border-style .div8 {
+  border-style: outset;
+}
+
+.border-with {
+  border-width: 0.4em 0.4em 4em 0.4em;
+  height: 10em;
+  border-style: solid;
+  display: flex;
+  grid: 5px;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 15px auto;
+}
+
+.border-with div {
+  height: 50%;
+  background-color: black;
+  width: 5px;
+  position: relative;
+}
+.border-with div::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  top: 99%;
+  left: -22px;
+}
+.border-with div:nth-child(1) {
+  height: 70%;
+  transform: rotate(60deg);
+  transform-origin: top;
+}
+.outline-test {
+  display: flex;
+  justify-content: space-evenly;
+}
+.outline-test div {
+  background-color: #ccc;
+  height: 10em;
+  width: 10em;
+  border: 0.5em solid darkorange;
+  outline: 0.5em solid blue;
+}
+
+.outline-test .div2 {
+  border-radius: 50%;
+}
+
+.concentric-square,
+.concentric-circle,
+.concentric-wifi {
+  background-color: black;
+  width: 20em;
+  height: 20em;
+  position: relative;
+}
+.concentric-square div {
+  width: 5em;
+  height: 5em;
+  background-color: darkblue;
+  position: absolute;
+  top: calc(10em - 0.5 * 5em);
+  left: calc(10em - 0.5 * 5em);
+  border-top: 0.5em wheat solid;
+  border-bottom: 0.5em wheat solid;
+  border-left: 0.5em rgba(0, 0, 255, 0.5) solid;
+  border-right: 0.5em rgba(0, 0, 255, 0.5) solid;
+  z-index: 5;
+}
+
+.concentric-square .div2 {
+  height: 7em;
+  width: 7em;
+  top: calc(10em - 0.5 * 7em);
+  left: calc(10em - 0.5 * 7em);
+  z-index: 4;
+}
+.concentric-square .div3 {
+  height: 9em;
+  width: 9em;
+  top: calc(10em - 0.5 * 9em);
+  left: calc(10em - 0.5 * 9em);
+  z-index: 3;
+}
+.concentric-square .div4 {
+  height: 11em;
+  width: 11em;
+  top: calc(10em - 0.5 * 11em);
+  left: calc(10em - 0.5 * 11em);
+  z-index: 2;
+}
+.concentric-square .div5 {
+  height: 13em;
+  width: 13em;
+  top: calc(10em - 0.5 * 13em);
+  left: calc(10em - 0.5 * 13em);
+  z-index: 1;
+}
+.concentric-circle div {
+  position: absolute;
+  border-radius: 50%;
+  border: lime solid;
+}
+.concentric-circle .div1 {
+  height: 5em;
+  width: 5em;
+  top: calc(10em - 0.5 * 5em);
+  left: calc(10em - 0.5 * 5em);
+  z-index: 5;
+  background-color: lime;
+}
+.concentric-circle .div2 {
+  height: 7em;
+  width: 7em;
+  top: calc(10em - 0.5 * 7em);
+  left: calc(10em - 0.5 * 7em);
+  z-index: 4;
+  /* filter: opacity(0.6); */
+  opacity: 0.8;
+}
+.concentric-circle .div3 {
+  height: 9em;
+  width: 9em;
+  top: calc(10em - 0.5 * 9em);
+  left: calc(10em - 0.5 * 9em);
+  z-index: 3;
+  opacity: 0.6;
+}
+.concentric-circle .div4 {
+  height: 11em;
+  width: 11em;
+  top: calc(10em - 0.5 * 11em);
+  left: calc(10em - 0.5 * 11em);
+  z-index: 2;
+  opacity: 0.4;
+}
+.concentric-circle .div5 {
+  height: 13em;
+  width: 13em;
+  top: calc(10em - 0.5 * 13em);
+  left: calc(10em - 0.5 * 13em);
+  z-index: 1;
+  opacity: 0.2;
+}
+.concentric-wifi div {
+  position: absolute;
+  border-radius: 50%;
+  border: 0.5em lime solid;
+  border-color: red transparent transparent transparent;
+}
+.concentric-wifi .div1 {
+  height: 2em;
+  width: 2em;
+  top: calc(10em - 0.5 * 2em);
+  left: calc(10em - 0.5 * 2em);
+  z-index: 5;
+  background-color: lime;
+  border-color: currentColor;
+}
+.concentric-wifi .div2 {
+  height: 4em;
+  width: 4em;
+  top: calc(10em - 0.5 * 4em);
+  left: calc(10em - 0.5 * 4em);
+  z-index: 4;
+}
+.concentric-wifi .div3 {
+  height: 6em;
+  width: 6em;
+  top: calc(10em - 0.5 * 6em);
+  left: calc(10em - 0.5 * 6em);
+  z-index: 3;
+  border-top-color: darkgoldenrod;
+}
+.concentric-wifi .div4 {
+  height: 8em;
+  width: 8em;
+  top: calc(10em - 0.5 * 8em);
+  left: calc(10em - 0.5 * 8em);
+  z-index: 2;
+  border-top-color: orange;
+}
+.concentric-wifi .div5 {
+  height: 10em;
+  width: 10em;
+  top: calc(10em - 0.5 * 10em);
+  left: calc(10em - 0.5 * 10em);
+  z-index: 1;
+  border-top-color: yellow;
+}
+
+.sky {
+  background-color: gray;
+  height: 10em;
+  width: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.moon {
+  width: 5em;
+  height: 5em;
+  background-color: gold;
+  border-radius: 50%;
+  box-shadow: 0 0.1em 1em wheat;
+}
