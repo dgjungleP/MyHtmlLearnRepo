@@ -247,3 +247,84 @@ body {
   border-radius: 50%;
   box-shadow: 0 0.1em 1em wheat;
 }
+
+.semicircle {
+  display: flex;
+  justify-content: space-between;
+}
+.semicircle div {
+  outline: 1px dashed black;
+  border: 4em solid;
+  border-radius: 50%;
+}
+
+.semicircle div:nth-child(1) {
+  border-color: lightgreen deepskyblue transparent transparent;
+}
+
+.semicircle div:nth-child(2) {
+  border-color: transparent lightgreen deepskyblue transparent;
+}
+
+.semicircle div:nth-child(3) {
+  border-color: transparent transparent lightgreen deepskyblue;
+}
+
+.semicircle div:nth-child(4) {
+  border-color: lightgreen transparent transparent deepskyblue;
+}
+.fox {
+  display: flex;
+}
+
+.fox .face {
+  width: 10em;
+  height: 10em;
+  background-color: darkgoldenrod;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.fox .ear {
+  border-radius: 50%;
+  border: 5em solid;
+  border-color: orange transparent transparent transparent;
+  position: absolute;
+  z-index: -1;
+}
+.fox .ear:nth-child(1) {
+  transform: rotate(45deg);
+  right: 50%;
+}
+.fox .ear:nth-child(2) {
+  transform: rotate(-45deg);
+  left: 50%;
+}
+
+.fox .nose {
+  width: 1em;
+  height: 1em;
+  background-color: black;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 2;
+}
+.fox .eye {
+  border-radius: 50%;
+  border: 5em solid;
+  border-color: whitesmoke transparent transparent transparent;
+  position: absolute;
+  top: 50%;
+}
+.fox .eye-left {
+  transform: rotate(45deg);
+  right: 50%;
+}
+.fox .eye-right {
+  transform: rotate(-45deg);
+  left: 50%;
+}
