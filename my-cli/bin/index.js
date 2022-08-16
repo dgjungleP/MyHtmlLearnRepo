@@ -33,9 +33,42 @@ function makeFile() {
       (err) => {}
     );
 
-    file.writeFile(`./${fileDir}/style.css`, ``, "utf-8", (err) => {
-      process.exit();
-    });
+    file.writeFile(
+      `./${fileDir}/style.css`,
+      `@import url("https://fonts.font.im/css?family=Roboto");
+
+    /*
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+    
+    FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    */
+    
+    /* 
+    Main Colo:#087f5b
+    Gary COlor:#343a40
+     */
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* ------------------------ */
+    /* GENERAL STYLES */
+    /* ------------------------ */
+    body {
+      font-family: "Roboto", sans-serif;
+      color: #343a40;
+    }
+    `,
+      "utf-8",
+      (err) => {
+        process.exit();
+      }
+    );
   });
 }
 
